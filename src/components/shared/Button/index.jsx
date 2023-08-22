@@ -3,15 +3,74 @@ import { ButtonMeta } from '../Typography';
 import { Link } from 'react-router-dom';
 
 const ButtonContainer = styled.button`
-  color: ${({ color, variant } = {}) => color || (variant !== 'primary' ? '#fff' : '#000')};
-  background-color: ${({ backgroundColor, variant } = {}) => backgroundColor || (variant !== 'primary' ? '#000' : '#fff')};
-  border: ${({ variant } = {}) => (variant === 'primary' ? '1px solid #000' : '1px solid #fff')};
-  padding: ${({ padding } = {}) => padding || '15px 25px'};
+  background-color: ${props => {
+    switch (props.variant) {
+      case 'primary':
+        return props.theme.colors.primary;
+      case 'secondary':
+        return props.theme.colors.secondary;
+      default:
+        return props.theme.colors.primary;
+    }
+  }};
+
+  color: ${props => {
+    switch (props.variant) {
+      case 'primary':
+        return props.theme.colors.secondary;
+      case 'secondary':
+        return props.theme.colors.primary;
+      default:
+        return props.theme.colors.secondary;
+    }
+  }};
+
+  border: none;
   border-radius: 0.25rem;
+  padding: 16px 24px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+
   &:hover {
-    filter: brightness(0.9);
+    filter: brightness(0.8);
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: ${props => {
+      switch (props.variant) {
+        case 'primary':
+          return props.theme.boxShadow.primary;
+        case 'secondary':
+          return props.theme.boxShadow.secondary;
+        default:
+          return props.theme.boxShadow.primary;
+      }
+    }};
+  }
+
+  &:disabled {
+    background-color: ${props => props.theme.colors.secondaryLighter};
+    color: ${props => props.theme.colors.secondaryLight};
+    cursor: not-allowed;
+  }
+
+  ${props => props.css}
+
+  @media (min-width: ${props => props.theme.breakpoints.sm}) {
+    padding: 0.75rem 1.25rem;
+  }
+
+  @media (min-width: ${props => props.theme.breakpoints.md}) {
+    padding: 1rem 1.5rem;
+  }
+
+  @media (min-width: ${props => props.theme.breakpoints.lg}) {
+    padding: 1.25rem 1.75rem;
+  }
+
+  @media (min-width: ${props => props.theme.breakpoints.xl}) {
+    padding: 1.5rem 2rem;
   }
 `;
 

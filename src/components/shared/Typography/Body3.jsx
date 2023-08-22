@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 import { baseTypography } from './baseTypography';
 
-export default styled.h3`
+export default styled.p`
   ${baseTypography}
-
-  font-size: 24px;
+  font-size: 16px;
 `;
