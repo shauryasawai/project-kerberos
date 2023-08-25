@@ -5,5 +5,9 @@ export default styled.h1`
   ${baseTypography}
   font-size: 56px;
   line-height: 72px;
-  font-weight: 700;
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+    line-height: 32px;
+  }
 `;

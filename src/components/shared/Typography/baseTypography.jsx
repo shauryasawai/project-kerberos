@@ -6,11 +6,6 @@ export const baseTypography = css`
   margin: ${props => (props.margin ? props.margin : '0')};
   font-family: 'Roboto', sans-serif;
 
-  &:hover {
-    color: ${props =>
-      props.primary ? props.theme.colors.primaryDark || 'inherit' : props.theme.colors.secondaryHover || 'inherit'};
-  }
-
   text-transform: ${props => {
     switch (props.transform) {
       case 'uppercase':

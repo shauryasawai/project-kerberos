@@ -7,4 +7,7 @@ export default styled.p`
   font-size: 24px;
   font-weight: 400;
   color: inherit !important;
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
 `;
