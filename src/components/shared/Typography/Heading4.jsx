@@ -7,7 +7,7 @@ export default styled.h4`
   line-height: 32px;
 
   @media (max-width: 768px) {
-    font-size: 8px;
-    line-height: 12px;
+    font-size: 16px;
+    line-height: 18px;
   }
 `;
