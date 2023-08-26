@@ -1,10 +1,10 @@
-import NewsLetterSection from '../../components/molecules/Newsletter';
+import TeamSection from '../../components/molecules/TeamCard';
 import { Container } from './styles';
 
 const Playground = () => {
   return (
     <Container>
-      <NewsLetterSection />
+      <TeamSection />
     </Container>
   );
 };
