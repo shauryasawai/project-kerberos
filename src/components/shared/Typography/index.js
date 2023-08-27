@@ -1,8 +1,10 @@
 export { default as Body } from './Body1';
 export { default as Body2 } from './Body2';
 export { default as Body3 } from './Body3';
+
 export { default as Body4 } from './Body4';
 export { default as Body5 } from './Body5';
+
 export { default as Heading1 } from './Heading1';
 export { default as Heading2 } from './Heading2';
 export { default as Heading3 } from './Heading3';

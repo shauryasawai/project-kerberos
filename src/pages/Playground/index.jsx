@@ -1,11 +1,8 @@
-import TeamSection from '../../components/molecules/TeamCard';
-import Footer from '../../components/partials/footer/Footer';
-
+import Navbar from '../../components/shared/Navbar';
 const Playground = () => {
   return (
     <>
-      <TeamSection />
-      <Footer />
+   <Navbar />
     </>
   );
 };
