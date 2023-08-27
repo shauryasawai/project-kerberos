@@ -3,4 +3,5 @@ import ResourceSection from '../../components/molecules/ResourceSection/Resource
 const Playground = () => {
   return <ResourceSection />;
 };
+
 export default Playground;
