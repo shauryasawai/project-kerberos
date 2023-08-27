@@ -1,9 +1,13 @@
-import ResourceSection from '../../components/molecules/ResourceSection/ResourceSection.jsx';
+import Faq from '../../components/molecules/faq/faq';
+import TeamSection from '../../components/molecules/TeamCard';
+import Footer from '../../components/partials/footer/Footer';
 
 const Playground = () => {
   return (
     <>
-      <ResourceSection />
+      <TeamSection />
+      <Faq />
+      <Footer />
     </>
   );
 };
