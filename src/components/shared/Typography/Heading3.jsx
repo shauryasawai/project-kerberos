@@ -8,10 +8,8 @@ export default styled.h3`
 
   font-weight: 700;
 
-
   @media (max-width: 768px) {
     font-size: 12px;
     line-height: 16px;
   }
-
 `;

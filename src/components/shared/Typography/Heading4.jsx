@@ -13,5 +13,4 @@ export default styled.h4`
     font-size: 16px;
     line-height: 18px;
   }
-
 `;

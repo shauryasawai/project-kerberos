@@ -1,10 +1,6 @@
-import Navbar from '../../components/shared/Navbar';
-const Playground = () => {
-  return (
-    <>
-   <Navbar />
-    </>
-  );
-};
+import ResourceSection from '../../components/molecules/ResourceSection/ResourceSection.jsx';
 
+const Playground = () => {
+  return <ResourceSection />;
+};
 export default Playground;

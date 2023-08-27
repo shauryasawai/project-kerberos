@@ -11,5 +11,4 @@ export default styled.h2`
     font-size: 32px;
     line-height: 36px;
   }
-
 `;
