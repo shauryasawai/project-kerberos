@@ -1,11 +1,12 @@
 import TeamSection from '../../components/molecules/TeamCard';
-import { Container } from './styles';
+import Footer from '../../components/partials/footer/Footer';
 
 const Playground = () => {
   return (
-    <Container>
+    <>
       <TeamSection />
-    </Container>
+      <Footer />
+    </>
   );
 };
 
