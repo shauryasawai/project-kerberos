@@ -44,11 +44,20 @@ const ResourceSectionContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 8px;
-  margin: 0 auto;
-  @media (min-width: 920px) {
+  padding: 24px;
+
+  @media (min-width: ${props => props.theme.breakpoints.md}) {
+    padding: 20px 32px;
+  }
+
+  @media (min-width: ${props => props.theme.breakpoints.lg}) {
     gap: 40px;
-    padding: 33px 129px;
+    padding: 24px 48px;
+  }
+
+  @media (min-width: ${props => props.theme.breakpoints.xl}) {
+    padding: 32px 64px;
+    margin: 0 auto;
   }
 `;
 

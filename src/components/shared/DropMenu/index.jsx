@@ -1,6 +1,5 @@
-import { Navopen } from '../Navbar/styles';
 import { Link } from 'react-scroll';
-import { List } from '../Navbar/styles';
+import { List, Navopen } from '../../marginals/Navbar/styles';
 
 const DropMenu = props => {
   return (

@@ -1,12 +1,24 @@
-import { Button, Heading1 } from '../../components/shared';
+import AboutUs from '../../components/atoms/AboutUs';
+import { Footer, NavBar } from '../../components/marginals';
+import { Contact, FAQ, HeroSection, MentorCarousel, Newsletter, ResourceSection, TeamCard } from '../../components/molecules';
 import { Container } from './styles';
 
 const Home = () => {
   return (
-    <Container>
-      <Heading1>Home</Heading1>
-      <Button text='Primary Button' variant='secondary' />
-    </Container>
+    <>
+      <NavBar />
+      <Container>
+        <HeroSection />
+        <AboutUs />
+        <MentorCarousel />
+        <TeamCard />
+        <ResourceSection />
+        <Newsletter />
+        <FAQ />
+        <Contact />
+      </Container>
+      <Footer />
+    </>
   );
 };
 

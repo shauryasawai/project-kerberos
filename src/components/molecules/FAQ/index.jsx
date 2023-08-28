@@ -1,5 +1,5 @@
 import faqData from '../../../data/faq';
-import FaqItem from '../../atoms/faq/FaqItem';
+import FaqItem from '../../atoms/FAQ';
 import { FaqContainer, FaqHeading, Caption, FaqLayout, Caption2, Caption3, Caption4 } from './style';
 
 const FaqComponent = () => {

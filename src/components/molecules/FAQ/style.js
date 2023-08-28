@@ -1,10 +1,21 @@
 import styled from 'styled-components';
 
 export const FaqContainer = styled.div`
-  padding: 25px;
+  width: 100%;
+  padding: 24px;
+  max-width: 1440px;
 
-  @media (max-width: 768px) {
-    padding: 15px;
+  @media (min-width: ${props => props.theme.breakpoints.md}) {
+    padding: 20px 32px;
+  }
+
+  @media (min-width: ${props => props.theme.breakpoints.lg}) {
+    gap: 24px;
+    padding: 24px 48px;
+  }
+
+  @media (min-width: ${props => props.theme.breakpoints.xl}) {
+    padding: 28px 64px;
   }
 `;
 
@@ -15,7 +26,6 @@ export const FaqHeading = styled.div`
   font-style: normal;
   text-align: left;
   padding-right: 25px;
-  margin-bottom: 160px;
   line-height: 130.187%;
 
   @media (max-width: 768px) {
@@ -26,11 +36,11 @@ export const FaqHeading = styled.div`
 `;
 
 export const Caption = styled.div`
-  margin-bottom: 114px;
   font-size: 24px;
   text-align: left;
-  font-syle: normal;
+  font-style: normal;
   font-family: Roboto;
+  padding-bottom: 40px;
 `;
 
 export const FaqLayout = styled.div`

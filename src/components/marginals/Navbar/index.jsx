@@ -1,9 +1,7 @@
 import { useState } from 'react';
-import DropMenu from '../DropMenu';
-// import { useContext } from 'react'
 import { Link } from 'react-scroll';
 import { Bar, Buttondiv, Contact, Content, Hamburger, List, Logo, NavChild, NavContainer, Services } from './styles';
-import NavText from '../Typography/NavText';
+import { DropMenu, NavText } from '../../shared';
 
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false);

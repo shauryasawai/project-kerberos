@@ -33,9 +33,14 @@ export const Logo = styled.img`
   }
 `;
 export const NavChild = styled.nav`
-    width: 100%; height: 135; , background: rgba(217, 217, 217, 0); display:flex; justify-content:space-between; align-items:center; z-index:9999;
-    
-    `;
+  width: 100%;
+  height: 135;
+  background: rgba(217, 217, 217, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+`;
 
 export const List = styled.li`
   list-style: none;
@@ -44,7 +49,7 @@ export const List = styled.li`
 `;
 
 export const Image = styled.img`
-  width:;
+  width: 40%;
   height: 40%;
 `;
 
@@ -104,7 +109,7 @@ export const Navopen = styled.div`
   flex-direction: column;
   align-items: center;
   overflow: hidden;
-  vertically-align: center;
+  align-items: center;
   // opacity: ${({ isOpen }) => (isOpen ? '1' : '0')};
   // transform: translateY(${({ isOpen }) => (isOpen ? '0' : '-1vh')});
   transition:
