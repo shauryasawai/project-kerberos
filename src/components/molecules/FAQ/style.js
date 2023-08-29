@@ -2,11 +2,16 @@ import styled from 'styled-components';
 
 export const FaqContainer = styled.div`
   width: 100%;
-  padding: 24px;
-  max-width: 1440px;
+  padding: 16px;
+
+  @media (min-width: ${props => props.theme.breakpoints.sm}) {
+    max-width: 625px;
+    margin: 0 auto;
+  }
 
   @media (min-width: ${props => props.theme.breakpoints.md}) {
     padding: 20px 32px;
+    max-width: 1440px;
   }
 
   @media (min-width: ${props => props.theme.breakpoints.lg}) {

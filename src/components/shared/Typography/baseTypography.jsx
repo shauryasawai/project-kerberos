@@ -19,5 +19,5 @@ export const baseTypography = css`
     }
   }};
 
-  text-align: ${props => (props.textAlign ? props.textAlign : 'left')};
+  text-align: ${props => (props.textAlign ? props.textAlign : 'justify')};
 `;

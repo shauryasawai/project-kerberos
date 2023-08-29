@@ -4,6 +4,7 @@ import styled from 'styled-components';
 export const NavContainer = styled.nav`
   width: 100%;
   position: fixed;
+  top: 0;
   height: 100px;
   background: rgba(255, 255, 255, 0.2);
   z-index: 100;
@@ -13,7 +14,6 @@ export const NavContainer = styled.nav`
   backdrop-filter: blur(25px);
   align-items: center;
   display: flex;
-  position: relative;
   padding: 0 6vw 0 7vw;
   font-family: Roboto, sans-serif;
   font-weight: 400;

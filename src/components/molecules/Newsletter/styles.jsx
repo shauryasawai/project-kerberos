@@ -5,16 +5,17 @@ export const Container = styled.div`
   flex-direction: column;
   margin: 0 auto;
   gap: 42px;
-  padding: 24px;
-  max-width: 1440px;
+  padding: 16px;
+  max-width: 100%;
 
   @media (min-width: ${props => props.theme.breakpoints.md}) {
     flex-direction: row;
     align-items: center;
     width: 100%;
     justify-content: space-between;
-    gap: 10px;
+    gap: 18px;
     padding: 20px 32px;
+    max-width: 1440px;
   }
 
   @media (min-width: ${props => props.theme.breakpoints.lg}) {

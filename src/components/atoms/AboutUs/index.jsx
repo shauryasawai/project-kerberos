@@ -137,7 +137,7 @@ const AboutUs = () => {
             <AboutUsBox1>
               <TextContainer>
                 <AboutUsText reverse={item.id % 2 === 0}>
-                  <Heading2>{item.heading}</Heading2>
+                  <Heading2 textAlign='left'>{item.heading}</Heading2>
                   <Body3 style={{ color: '#6C757D' }}>{item.content}</Body3>
                 </AboutUsText>
               </TextContainer>
@@ -152,18 +152,18 @@ const AboutUs = () => {
           <AboutUsBox3>
             <TextContainer>
               <AboutUsText>
-                <Heading2>Domain Activities Offered: </Heading2>
+                <Heading2 textAlign='left'>Domain Activities Offered: </Heading2>
                 <Body3 style={{ color: '#6C757D' }}>
                   Explore our wide range of domain related activities designed to enhance your skills and knowledge
                 </Body3>
 
-                <Heading2>Expert Consulting Services: </Heading2>
+                <Heading2 textAlign='left'>Expert Consulting Services: </Heading2>
 
                 <Body3 style={{ color: '#6C757D' }}>
                   Get personalized consulting services from our team of experienced professionals to help you succeed in your
                   domain career.
                 </Body3>
-                <Heading2>Informative Workshops: </Heading2>
+                <Heading2 textAlign='left'>Informative Workshops: </Heading2>
                 <Body3 style={{ color: '#6C757D' }}>
                   Attend our informative workshops and gain valuable insights into the latest trends and advancements in the
                   domain industry
@@ -189,7 +189,7 @@ const AboutUs = () => {
         {/*    <AboutUsBox3 reverse={screen.width < 978 ? 2 : 1}>*/}
         {/*        <TextContainer>*/}
         {/*            <AboutUsText>*/}
-        {/*                <Heading2>Domain Activities Offered: </Heading2>*/}
+        {/*                <Heading2 textAlign='left'>Domain Activities Offered: </Heading2>*/}
         {/*                <Body3 style={{color: "#6C757D"}}>Explore our wide range of domain related*/}
         {/*                    activities*/}
         {/*                    designed to enhance your*/}
@@ -198,7 +198,7 @@ const AboutUs = () => {
         {/*                    knowledge*/}
         {/*                </Body3>*/}
 
-        {/*                <Heading2>Expert Consulting Services: </Heading2>*/}
+        {/*                <Heading2 textAlign='left'>Expert Consulting Services: </Heading2>*/}
 
         {/*                <Body3 style={{color: "#6C757D"}}>*/}
         {/*                    Get personalized consulting services from our team of experienced professionals*/}
@@ -208,7 +208,7 @@ const AboutUs = () => {
         {/*                    succeed in your domain*/}
         {/*                    career.*/}
         {/*                </Body3>*/}
-        {/*                <Heading2>Informative Workshops: </Heading2>*/}
+        {/*                <Heading2 textAlign='left'>Informative Workshops: </Heading2>*/}
         {/*                <Body3 style={{color: "#6C757D"}}>*/}
         {/*                    Attend our informative workshops and gain valuable insights into the latest*/}
         {/*                    trends*/}

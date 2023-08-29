@@ -21,15 +21,19 @@ const SectionHeading = styled(Heading1)`
   font-weight: 700;
   line-height: normal;
 `;
+
+const ItemsContainer = styled.div`
+  width: 100%;
+  max-height: 800px;
+  overflow-y: scroll;
+  position: relative;
+`;
+
 const ResourceItem = styled.div`
   display: flex;
   flex-direction: column;
-  //overflow-y: scroll;
   gap: 25px;
   position: relative;
-  //&::-webkit-scrollbar {
-  //  display: none;
-  //}
 
   @media (min-width: 920px) {
     gap: 64px;
@@ -44,7 +48,7 @@ const ResourceSectionContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 24px;
+  padding: 24px 18px;
 
   @media (min-width: ${props => props.theme.breakpoints.md}) {
     padding: 20px 32px;
@@ -65,9 +69,24 @@ const MainContainer = styled.div`
   width: 100%;
   max-height: 800px;
   overflow-y: scroll;
+  position: relative;
 
   &::-webkit-scrollbar {
     display: none;
+  }
+
+  @media (min-width: ${props => props.theme.breakpoints.sm}) {
+    max-width: 625px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: ${props => props.theme.breakpoints.md}) {
+    max-width: 1440px;
+  }
+
+  @media (min-width: ${props => props.theme.breakpoints.xl}) {
+    padding: 32px 64px;
+    margin: 0 auto;
   }
 
   @media (max-width: 524px) {
@@ -111,10 +130,12 @@ export default function ResourceSection() {
 
   return (
     <ResourceSectionContainer>
-      <SectionHeading>Resources</SectionHeading>
       <MainContainer>
+        <SectionHeading>Resources</SectionHeading>
         <ResourceNavbar navItems={navItems} stage={stage} />
-        <ResourceItem>{renderItems(stage)}</ResourceItem>
+        <ItemsContainer>
+          <ResourceItem>{renderItems(stage)}</ResourceItem>
+        </ItemsContainer>
       </MainContainer>
     </ResourceSectionContainer>
   );
