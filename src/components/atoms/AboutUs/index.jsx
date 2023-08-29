@@ -130,7 +130,7 @@ const DomainImage = styled.div`
 `;
 const AboutUs = () => {
   return (
-    <AboutUsContainer>
+    <AboutUsContainer id='about'>
       <AboutUsSection>
         {AboutContent.map(item => (
           <AboutUsRow key={item.id}>

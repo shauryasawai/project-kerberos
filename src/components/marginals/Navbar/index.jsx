@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { Link } from 'react-scroll';
-import { Bar, Buttondiv, Contact, Content, Hamburger, List, Logo, NavChild, NavContainer, Services } from './styles';
+import { Bar, Buttondiv, Contact, Content, Hamburger, List, Logo, NavChild, NavContainer } from './styles';
 import { DropMenu, NavText } from '../../shared';
+import { navItems } from '../../../data/navigation';
 
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
@@ -30,32 +31,19 @@ const Navbar = () => {
         <NavChild>
           <Logo src='/images/Navbar/logo.png' alt='logo' />
           <Content>
-            <List>
-              <Link to='about' spy={true} smooth={true} offset={-100} duration={500}>
-                <NavText>About Us</NavText>
-              </Link>
-            </List>
-            <List>
-              <Link to='team' spy={true} smooth={true} offset={-100} duration={500}>
-                <NavText>Team</NavText>
-              </Link>
-            </List>
-            <List>
-              <Link to='resources' spy={true} smooth={true} offset={-100} duration={500}>
-                <NavText>Resources</NavText>
-              </Link>
-            </List>
-            <Services>
-              <List>
-                <Link to='faqs' spy={true} smooth={true} offset={-100} duration={500}>
-                  <NavText>FAQs</NavText>
+            {navItems.map(item => (
+              <List key={item.title}>
+                <Link to={item.link} spy={true} smooth={true} offset={-100} duration={500}>
+                  <NavText>{item.title}</NavText>
                 </Link>
               </List>
-            </Services>
+            ))}
           </Content>
           <Buttondiv>
             <Contact className='contact'>
-              <NavText>Contact</NavText>
+              <Link to='contact' spy={true} smooth={true} offset={-100} duration={500}>
+                <NavText>Contact</NavText>
+              </Link>
             </Contact>
             <Hamburger onClick={toggleMenu} toggleMenu={toggleMenu}>
               <Bar active={isActive} />

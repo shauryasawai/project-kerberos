@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const FaqContainer = styled.div`
   width: 100%;
   padding: 16px;
+  border-bottom: 1px solid #e5e5e5;
 
   @media (min-width: ${props => props.theme.breakpoints.sm}) {
     max-width: 625px;
@@ -56,8 +57,6 @@ export const FaqLayout = styled.div`
   @media (max-width: 768px) {
     gap: 16px;
   }
-  margin-top: 160 px;
-  margin-bottom: 160 px;
 `;
 
 export const FaqItem = styled.div`
@@ -87,7 +86,7 @@ export const Answer = styled.div`
 `;
 export const Caption2 = styled.div`
   font-weight: bold;
-  margin-top: 160px;
+  margin-top: 40px;
   text-align: left;
   font-family: Roboto;
   font-size: 48px;
@@ -96,6 +95,18 @@ export const Caption2 = styled.div`
   line-height: normal;
   color: #2a2a2a;
   margin-bottom: 24px;
+
+  @media (max-width: ${props => props.theme.breakpoints.lg}) {
+    font-size: 40px;
+  }
+
+  @media (max-width: ${props => props.theme.breakpoints.md}) {
+    font-size: 36px;
+  }
+
+  @media (max-width: ${props => props.theme.breakpoints.sm}) {
+    font-size: 24px;
+  }
 `;
 export const Caption3 = styled.div`
   font-family: Roboto;
@@ -105,6 +116,14 @@ export const Caption3 = styled.div`
   line-height: normal;
   text-align: left;
   color: #6c757d;
+
+  @media (max-width: ${props => props.theme.breakpoints.md}) {
+    font-size: 18px;
+  }
+
+  @media (max-width: ${props => props.theme.breakpoints.sm}) {
+    font-size: 16px;
+  }
 `;
 
 export const Caption4 = styled.div`

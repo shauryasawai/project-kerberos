@@ -9,8 +9,19 @@ const ButtonContainer = styled.button`
         return props.theme.colors.primary;
       case 'secondary':
         return props.theme.colors.secondary;
+      case 'outline':
+        return 'transparent';
       default:
         return props.theme.colors.primary;
+    }
+  }};
+
+  border: ${props => {
+    switch (props.variant) {
+      case 'outline':
+        return `2px solid ${props.theme.colors.primary}`;
+      default:
+        return 'none';
     }
   }};
 
@@ -20,12 +31,13 @@ const ButtonContainer = styled.button`
         return props.theme.colors.secondary;
       case 'secondary':
         return props.theme.colors.primary;
+      case 'outline':
+        return props.theme.colors.primary;
       default:
         return props.theme.colors.secondary;
     }
   }};
 
-  border: none;
   border-radius: 0.25rem;
   padding: 16px 24px;
   cursor: pointer;
@@ -43,6 +55,8 @@ const ButtonContainer = styled.button`
           return props.theme.boxShadow.primary;
         case 'secondary':
           return props.theme.boxShadow.secondary;
+        case 'outline':
+          return props.theme.boxShadow.outline;
         default:
           return props.theme.boxShadow.primary;
       }

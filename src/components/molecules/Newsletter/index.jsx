@@ -5,7 +5,7 @@ import Swiper from '../../atoms/Newsletter/Swiper';
 
 const NewsLetterSection = () => {
   return (
-    <Container>
+    <Container id='news'>
       <TitleContainer>
         <Heading4 transform='uppercase'>
           Featured <span>This Week</span>
