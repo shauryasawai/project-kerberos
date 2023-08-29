@@ -1,20 +1,15 @@
-import { Button, ButtonMeta, Heading2, Heading4 } from '../../shared';
 import ContactInfoItem from './ContactInfoItem';
 import { MdEmail, MdLocalPhone } from 'react-icons/md';
 import ContactSocial from './ContactSocial';
 import styled from 'styled-components';
-
-const TitleWrapper = styled.div`
-  margin-bottom: 2rem;
-  gap: 24px;
-`;
 
 const ContactSectionWrapper = styled.div`
   display: flex;
   flex-direction: row;
   margin: auto;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 10%;
   margin-top: 128px;
   width: 100%;
   @media (max-width: 950px) {
@@ -79,26 +74,12 @@ const LargerContactSocial = styled(ContactSocial)`
 `;
 
 const ResponsiveStyles = styled.div`
-  margin: 4em;
+  width: 100%;
 `;
 
 const ContactSection = () => {
   return (
     <ResponsiveStyles>
-      <TitleWrapper>
-        <Heading2 color='black'>Still have questions?</Heading2>
-        <Heading4 style={{ color: '#484848', paddingTop: '24px' }}>Feel free to reach out to us for more information.</Heading4>
-        <Button
-          style={{
-            background: 'transparent',
-            border: '2px solid #39ff14',
-            padding: '16px 24px',
-            color: '#50c300',
-            marginTop: '48px',
-          }}>
-          <ButtonMeta>Contact</ButtonMeta>
-        </Button>
-      </TitleWrapper>
       <ContactSectionWrapper>
         <LeftSide href='https://goo.gl/maps/8kwRDWcG228GXnGc6'>
           <img src='https://res.cloudinary.com/dhnkuonev/image/upload/v1693235517/map_pjjqfk.jpg' alt='map' />

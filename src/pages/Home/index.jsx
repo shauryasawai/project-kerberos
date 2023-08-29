@@ -8,8 +8,8 @@ const Home = () => {
   return (
     <>
       <NavBar />
+      <HeroSection />
       <Container>
-        <HeroSection />
         <AboutUsSection />
         <MentorCarousel />
         <TeamCard />
