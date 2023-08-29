@@ -1,12 +1,19 @@
 import styled from 'styled-components';
 import { FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa';
+import { Body3 } from '../../shared';
 
 const SocialWrapper = styled.div`
   display: flex;
+  width: 90%;
   align-items: center;
-  gap: 20rem;
-  color: #39ff14; /* Fluorescent green */
-  font-size: 36px; /* Increase the font size for larger icons */
+  justify-content: space-around;
+  color: #245f02;
+  font-size: 36px;
+  border-radius: 10px;
+  @media (max-width: 768px) {
+    gap: 8%;
+    font-size: 20px;
+  }
 `;
 
 const SocialItem = styled.div`
@@ -14,38 +21,37 @@ const SocialItem = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 0.5rem; /* Adjust the gap as needed */
 `;
 
-const Icon = styled.div`
+const Icon = styled.a`
   display: flex;
   align-items: center;
-  color: #39ff14; /* Fluorescent green */
+  color: #245f02;
+  cursor: pointer;
 `;
 
-const IconText = styled.p`
-  margin: 0; /* Remove default margin */
-  font-size: 14px; /* Set a smaller font size for the text */
-  color: green; /* Fluorescent green */
+const IconText = styled(Body3)`
+  margin: 0;
+  color: green;
 `;
 
 const ContactSocial = () => {
   return (
     <SocialWrapper>
       <SocialItem>
-        <Icon>
+        <Icon href='/'>
           <FaInstagram />
         </Icon>
         <IconText>Instagram</IconText>
       </SocialItem>
       <SocialItem>
-        <Icon>
+        <Icon href='/'>
           <FaTwitter />
         </Icon>
         <IconText>Twitter</IconText>
       </SocialItem>
       <SocialItem>
-        <Icon>
+        <Icon href='/'>
           <FaLinkedin />
         </Icon>
         <IconText>LinkedIn</IconText>

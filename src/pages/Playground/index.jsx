@@ -1,9 +1,9 @@
-import HeroSection from '../../components/molecules/HeroSection';
+import ContactSection from '../../components/molecules/Contact';
 
 const Playground = () => {
   return (
     <>
-      <HeroSection />
+      <ContactSection />
     </>
   );
 };

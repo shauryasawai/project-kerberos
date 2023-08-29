@@ -1,42 +1,59 @@
-import { Heading1, Heading3 } from '../../shared';
+import { Button, ButtonMeta, Heading2, Heading4 } from '../../shared';
 import ContactInfoItem from './ContactInfoItem';
 import { MdEmail, MdLocalPhone } from 'react-icons/md';
 import ContactSocial from './ContactSocial';
 import styled from 'styled-components';
-import Map from './Map';
-
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
 
 const TitleWrapper = styled.div`
-  text-align: center;
   margin-bottom: 2rem;
+  gap: 24px;
 `;
 
 const ContactSectionWrapper = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  margin: auto;
   align-items: center;
-`;
-
-const ContentWrapper = styled.div`
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 2rem;
-  margin-top: 2rem;
+  justify-content: space-around;
+  margin-top: 128px;
   width: 100%;
+  @media (max-width: 950px) {
+    margin-top: 64px;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
 `;
 
-const LeftSide = styled.div`
-  flex: 7;
+const LeftSide = styled.a`
+  width: max-content;
+  border-radius: 10px;
+  border: 4px solid black;
+  img {
+    height: 450px;
+    aspect-ratio: 4/3;
+    border-radius: 10px;
+  }
+  @media (max-width: 768px) {
+    margin-top: 32px;
+    img {
+      height: 200px;
+    }
+  }
+  @media (max-width: 420px) {
+    img {
+      height: 180px;
+    }
+  }
 `;
 
 const RightSide = styled.div`
-  flex: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6rem;
+  @media (max-width: 768px) {
+    gap: 2rem;
+  }
 `;
 
 const SocialWrapper = styled.div`
@@ -44,87 +61,59 @@ const SocialWrapper = styled.div`
   justify-content: center;
   align-items: center;
   padding-top: 1rem;
-  margin-top: 0.5rem; /* Adjust the margin to make it closer */
+  margin-top: 0.5rem;
 `;
 
 const SocialBox = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
-  border: 2px solid black;
+  border: 1.5px solid black;
+  border-radius: 10px;
   padding: 1rem;
+  width: 70%;
 `;
 
 const LargerContactSocial = styled(ContactSocial)`
   font-size: 36px;
 `;
 
-const Button = styled.button`
-  border: 2px solid #39ff14; /* Fluorescent green */
-  color: #39ff14; /* Fluorescent green */
-  background-color: transparent;
-  padding: 10px 20px;
-  font-size: 18px;
-  cursor: pointer;
-`;
 const ResponsiveStyles = styled.div`
-  @media screen and (max-width: 768px) {
-    ${ContentWrapper} {
-      flex-direction: column;
-      align-items: flex-start; /* Align items to the left */
-    }
-
-    ${LeftSide}, ${RightSide} {
-      width: 100%;
-      text-align: left; /* Align text to the left */
-    }
-
-    ${RightSide} {
-      margin-top: 1rem;
-    }
-
-    ${SocialWrapper} {
-      display: none;
-    }
-    ${TitleWrapper} {
-      display: none;
-    }
-  }
+  margin: 4em;
 `;
 
 const ContactSection = () => {
   return (
     <ResponsiveStyles>
-      <Container>
-        <div className='container'>
-          <TitleWrapper>
-            <Heading3 color='black'>Still have questions?</Heading3>
-            <p color='gray'>Feel free to reach out to us for more information.</p>
-            <Button type='button'>Contact</Button>
-          </TitleWrapper>
-        </div>
-        <ContactSectionWrapper>
-          <ContentWrapper>
-            <LeftSide>
-              <Heading1>Get in Touch</Heading1>
-            </LeftSide>
-            <RightSide>
-              <ContactInfoItem title='Address' text='Address text' />
-              <ContactInfoItem icon={<MdLocalPhone />} title='Phone' text='Phone text' />
-              <ContactInfoItem icon={<MdEmail />} title='Email' text='Email text' />
-            </RightSide>
-          </ContentWrapper>
-        </ContactSectionWrapper>
-        <SocialWrapper>
-          <SocialBox>
-            <LargerContactSocial />
-          </SocialBox>
-        </SocialWrapper>
-        <div style={{ marginTop: '1rem', width: '100%', display: 'flex', justifyContent: 'center' }}>
-          <Map />
-        </div>
-      </Container>
+      <TitleWrapper>
+        <Heading2 color='black'>Still have questions?</Heading2>
+        <Heading4 style={{ color: '#484848', paddingTop: '24px' }}>Feel free to reach out to us for more information.</Heading4>
+        <Button
+          style={{
+            background: 'transparent',
+            border: '2px solid #39ff14',
+            padding: '16px 24px',
+            color: '#50c300',
+            marginTop: '48px',
+          }}>
+          <ButtonMeta>Contact</ButtonMeta>
+        </Button>
+      </TitleWrapper>
+      <ContactSectionWrapper>
+        <LeftSide href='https://goo.gl/maps/8kwRDWcG228GXnGc6'>
+          <img src='https://res.cloudinary.com/dhnkuonev/image/upload/v1693235517/map_pjjqfk.jpg' alt='map' />
+        </LeftSide>
+        <RightSide>
+          <ContactInfoItem title='Address' text='Address text' />
+          <ContactInfoItem icon={<MdLocalPhone />} title='Phone' text='Phone text' />
+          <ContactInfoItem icon={<MdEmail />} title='Email' text='Email text' />
+        </RightSide>
+      </ContactSectionWrapper>
+      <SocialWrapper>
+        <SocialBox>
+          <LargerContactSocial />
+        </SocialBox>
+      </SocialWrapper>
     </ResponsiveStyles>
   );
 };
