@@ -9,7 +9,7 @@ const FaqItem = ({ faq }) => {
 
   return (
     <FaqItemContainer className={isActive ? 'active' : ''} onClick={toggleFaq}>
-      <div>
+      <div style={{ fontWeight: '500', fontFamily: "'Roboto', sans-serif" }}>
         {faq.question}
         <ArrowIcon isActive={isActive} icon='akar-icons:chevron-down' />
       </div>

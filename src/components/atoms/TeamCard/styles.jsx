@@ -13,6 +13,7 @@ export const Image = styled.img`
   height: 260px;
   padding-bottom: 26px;
   border-radius: 16px;
+  // object-fit: cover;
 `;
 
 export const Links = styled.a`

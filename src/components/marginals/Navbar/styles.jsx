@@ -5,8 +5,8 @@ export const NavContainer = styled.nav`
   width: 100%;
   position: fixed;
   top: 0;
-  height: 100px;
-  background: rgba(255, 255, 255, 0.2);
+  height: 80px;
+  background: #fff;
   z-index: 100;
   box-shadow:
     1px 12px 16px 0px rgba(0, 0, 0, 0.25) inset,
@@ -14,7 +14,7 @@ export const NavContainer = styled.nav`
   backdrop-filter: blur(25px);
   align-items: center;
   display: flex;
-  padding: 0 6vw 0 7vw;
+  padding: 0 4vw 0 1vw;
   font-family: Roboto, sans-serif;
   font-weight: 400;
 
@@ -22,13 +22,13 @@ export const NavContainer = styled.nav`
     box-shadow:
       0px 11px 12px 0px rgba(0, 0, 0, 0.15) inset,
       11px -10px 25px 10px rgba(255, 255, 255, 0.3) inset;
-
-    padding-right: 5vh;
+    padding-right: 4vw;
   }
 `;
 export const Logo = styled.img`
-  @media only screen and (max-width: 913px) {
-    width: 65px;
+  width: 400px;
+  @media (max-width: 913px) {
+    width: 200px;
     height: auto;
   }
 `;
@@ -44,7 +44,7 @@ export const NavChild = styled.nav`
 
 export const List = styled.li`
   list-style: none;
-  margin-left: 64px;
+  margin-left: 44px;
   cursor: pointer;
 `;
 
@@ -58,7 +58,7 @@ export const Content = styled.nav`
 
   justify-content: space-between;
 
-  @media only screen and (max-width: 1028px) {
+  @media only screen and (max-width: 1200px) {
     display: none;
     position: absolute;
     background-size: cover;
@@ -77,7 +77,6 @@ export const Contact = styled.button`
   background-color: #66ff00;
   font-family: Roboto, sans-serif;
   border: none;
-  // padding: 1vh;
   padding: 12px 32px;
 
   cursor: pointer;
@@ -111,17 +110,11 @@ export const Navopen = styled.div`
   align-items: center;
   overflow: hidden;
   align-items: center;
-  // opacity: ${({ isOpen }) => (isOpen ? '1' : '0')};
-  // transform: translateY(${({ isOpen }) => (isOpen ? '0' : '-1vh')});
   transition:
     opacity 0.3s ease,
     transform 0.3s ease;
   opacity: 1;
-  // transform: translateY('-1vh');
   transition: all 2s ease-in;
-  // transition-property: all;
-  //   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
-  //   transition-duration: 450ms;
   @media all and (min-width: 913px) {
     display: none;
   }
@@ -130,7 +123,7 @@ export const Navopen = styled.div`
 export const Hamburger = styled.div`
   display: inline-block;
   cursor: pointer;
-  @media all and (min-width: 1028px) {
+  @media all and (min-width: 1200px) {
     display: none;
   }
 `;

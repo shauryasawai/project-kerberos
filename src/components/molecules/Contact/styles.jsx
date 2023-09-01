@@ -45,4 +45,8 @@ export const Content = styled.div`
     justify-content: space-between;
     padding-top: 48px;
   }
+  a {
+    color: #328201;
+    font-weight: 700;
+  }
 `;

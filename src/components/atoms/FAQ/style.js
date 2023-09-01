@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Icon } from '@iconify/react';
 export const FaqItemContainer = styled.div`
-  background-color: ${props => (props.isActive ? 'white' : 'rgba(240, 240, 240, 0.5)')};
+  background-color: transparent;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -10,16 +10,14 @@ export const FaqItemContainer = styled.div`
   font-size: 22px;
   cursor: pointer;
   transition:
-    background-color 0.3s,
     height 0.3s,
     padding 0.3s,
     transform 0.3s;
-  border: 1.5px solid #000;
+  border: 0.5px solid #000;
+  border-radius: 4px;
 
   &.active {
-    background-color: #ffffff;
     height: auto;
-    padding: 24px;
     transform: translateY(-5px);
   }
   > div:first-child {

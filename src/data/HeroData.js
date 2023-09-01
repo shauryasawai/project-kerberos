@@ -4,24 +4,24 @@ const HeroData = {
   heading3: 'and ',
   heading4: 'Consulting ',
   heading5: 'Club',
-  subtitle1: 'We are a breakthrough in the ',
-  subtitle2: 'domain ',
-  subtitle3: 'career, conducting various ',
-  subtitle4: 'activities ',
-  subtitle5: ' to ace the field.',
+  subtitle1: 'Welcome to our community! ',
+  subtitle2: 'Follow us ',
+  subtitle3: 'for domain expertise in the',
+  subtitle4: ' analytics and consulting',
+  subtitle5: ' sector.',
 
   sub: [
     {
       id: 1,
-      text: 'lorem ipsum',
+      text: 'Decode',
     },
     {
       id: 2,
-      text: 'lorem ipsum',
+      text: 'Analyze',
     },
     {
       id: 3,
-      text: 'lorem ipsum',
+      text: 'Thrive',
     },
   ],
   backgroundImage: 'https://res.cloudinary.com/dme9vltjf/image/upload/v1693196385/image_11_b2i104.png',

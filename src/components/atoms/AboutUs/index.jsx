@@ -1,9 +1,8 @@
 import Heading2 from '../../shared/Typography/Heading2';
-//import Body2 from '../../shared/Typography/Body2';
 import styled from 'styled-components';
 
 import { AboutContent } from '../../../data/About';
-import { Body3 } from '../../shared/index.js';
+import { Body2 } from '../../shared/index.js';
 
 const AboutUsContainer = styled.div`
   padding-top: 128px;
@@ -138,7 +137,7 @@ const AboutUs = () => {
               <TextContainer>
                 <AboutUsText reverse={item.id % 2 === 0}>
                   <Heading2 textAlign='left'>{item.heading}</Heading2>
-                  <Body3 style={{ color: '#6C757D' }}>{item.content}</Body3>
+                  <Body2 style={{ color: '#6C757D' }}>{item.content}</Body2>
                 </AboutUsText>
               </TextContainer>
             </AboutUsBox1>
@@ -152,22 +151,12 @@ const AboutUs = () => {
           <AboutUsBox3>
             <TextContainer>
               <AboutUsText>
-                <Heading2 textAlign='left'>Domain Activities Offered: </Heading2>
-                <Body3 style={{ color: '#6C757D' }}>
-                  Explore our wide range of domain related activities designed to enhance your skills and knowledge
-                </Body3>
-
-                <Heading2 textAlign='left'>Expert Consulting Services: </Heading2>
-
-                <Body3 style={{ color: '#6C757D' }}>
-                  Get personalized consulting services from our team of experienced professionals to help you succeed in your
-                  domain career.
-                </Body3>
-                <Heading2 textAlign='left'>Informative Workshops: </Heading2>
-                <Body3 style={{ color: '#6C757D' }}>
-                  Attend our informative workshops and gain valuable insights into the latest trends and advancements in the
-                  domain industry
-                </Body3>
+                <Heading2 textAlign='left'>Learn by Practice </Heading2>
+                <Body2 style={{ color: '#6C757D' }}>
+                  AnC through its main divisions in Consulting and Data analytics encourages students to follow a
+                  learn-by-practice regimen, and for the same, the club supports and organises a wide range of initiatives and
+                  events like ideathons throughout the year.
+                </Body2>
               </AboutUsText>
             </TextContainer>
           </AboutUsBox3>
@@ -178,48 +167,6 @@ const AboutUs = () => {
             />
           </DomainImage>
         </DomainContainer>
-
-        {/*<AboutUsRow>*/}
-        {/*    <ImageContainer reverse={screen.width < 978 ? 2 : 1}>*/}
-        {/*        <AboutUsImage*/}
-        {/*            src='https://res.cloudinary.com/dafdencvh/image/upload/v1693048472/kerbero%20project/image_3_qyip8s.png '*/}
-        {/*            alt='Team Photo'*/}
-        {/*        />*/}
-        {/*    </ImageContainer>*/}
-        {/*    <AboutUsBox3 reverse={screen.width < 978 ? 2 : 1}>*/}
-        {/*        <TextContainer>*/}
-        {/*            <AboutUsText>*/}
-        {/*                <Heading2 textAlign='left'>Domain Activities Offered: </Heading2>*/}
-        {/*                <Body3 style={{color: "#6C757D"}}>Explore our wide range of domain related*/}
-        {/*                    activities*/}
-        {/*                    designed to enhance your*/}
-        {/*                    skills*/}
-        {/*                    and*/}
-        {/*                    knowledge*/}
-        {/*                </Body3>*/}
-
-        {/*                <Heading2 textAlign='left'>Expert Consulting Services: </Heading2>*/}
-
-        {/*                <Body3 style={{color: "#6C757D"}}>*/}
-        {/*                    Get personalized consulting services from our team of experienced professionals*/}
-        {/*                    to*/}
-        {/*                    help*/}
-        {/*                    you*/}
-        {/*                    succeed in your domain*/}
-        {/*                    career.*/}
-        {/*                </Body3>*/}
-        {/*                <Heading2 textAlign='left'>Informative Workshops: </Heading2>*/}
-        {/*                <Body3 style={{color: "#6C757D"}}>*/}
-        {/*                    Attend our informative workshops and gain valuable insights into the latest*/}
-        {/*                    trends*/}
-        {/*                    and*/}
-        {/*                    advancements in the domain*/}
-        {/*                    industry*/}
-        {/*                </Body3>*/}
-        {/*            </AboutUsText>*/}
-        {/*        < /TextContainer>*/}
-        {/*    </AboutUsBox3>*/}
-        {/*</AboutUsRow>*/}
       </AboutUsSection>
     </AboutUsContainer>
   );

@@ -17,10 +17,11 @@ export const CardContainer = styled.div`
 
 export const CardTitle = styled(Heading5)`
   span {
-    color: ${props => props.theme.colors.primary};
+    color: ${props => props.theme.colors.primaryDark};
   }
 `;
 
 export const ImageContainer = styled.img`
   width: 100%;
+  aspect-ratio: 5/3;
 `;

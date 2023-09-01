@@ -5,20 +5,20 @@ export const contactData = {
     email: {
       icon: 'line-md:email',
       text: 'Email',
-      link: 'mailto:lorem@gmail.com',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod.',
+      link: 'mailto:  anc.nitr@gmail.com',
+      description: 'Any issues or suggestions? Mail us at',
     },
     phone: {
       icon: 'ic:sharp-phone',
       text: 'Phone',
-      link: 'tel:1234567890',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod.',
+      link: ['tel:+91-7978414351 (Saranya Mishra),', 'tel:+91-8340153562 (B Achyut)'],
+      description: 'Reach to our representatives anytime!',
     },
     address: {
       icon: 'ph:map-pin-fill',
       text: 'Address',
-      link: 'https://goo.gl/maps/4QSK1VjFjx4Z2Q6r9',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod.',
+      link: 'https://goo.gl/maps/Hqf6mqsjVdv4j4LY6',
+      description: 'Visit us in person!',
     },
   },
 };

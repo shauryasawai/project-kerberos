@@ -40,6 +40,7 @@ export const FooterLinks = styled.div`
   gap: 8px;
 `;
 export const FooterText = styled(Body3)`
+  cursor: pointer;
   color: #6c757d;
   font-weight: 500;
   text-align: left;

@@ -26,7 +26,7 @@ export const FaqContainer = styled.div`
 `;
 
 export const FaqHeading = styled.div`
-  font-weight: 700;
+  font-weight: 500;
   font-size: 56px;
   font-family: Roboto;
   font-style: normal;

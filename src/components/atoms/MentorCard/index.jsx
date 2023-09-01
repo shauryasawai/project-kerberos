@@ -1,10 +1,10 @@
 import { MentorCard, MentorDescription, MentorName } from './style';
-export default function MentorBox({ imgUrl, imgTitle }) {
+export default function MentorBox({ imgUrl, imgTitle, imgDescription }) {
   return (
     <MentorCard>
       <img src={imgUrl} alt={imgTitle} />
-      <MentorName>John Doe</MentorName>
-      <MentorDescription>{imgTitle}</MentorDescription>
+      <MentorName>{imgTitle}</MentorName>
+      <MentorDescription>{imgDescription}</MentorDescription>
     </MentorCard>
   );
 }

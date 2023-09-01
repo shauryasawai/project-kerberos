@@ -12,7 +12,7 @@ export const navItems = [
     link: 'resources',
   },
   {
-    title: 'News',
+    title: 'AnC Insights',
     link: 'news',
   },
   {

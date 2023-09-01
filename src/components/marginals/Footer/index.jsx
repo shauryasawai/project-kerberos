@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import { FooterContainer, FooterCopyright, FooterImage, FooterInsights, FooterLinks, FooterSocials, FooterText } from './styles';
 import { Icon } from '@iconify/react';
 import { footerData } from '../../../data/footer';
@@ -12,16 +12,23 @@ const Footer = () => {
         <FooterInsights>
           <FooterImage src={imageLink} alt={alt} />
           <FooterLinks>
-            {siteLinks.map(link => (
-              <FooterText key={link.Id}>
-                <a href={link.link}>{link.title}</a>
+            {siteLinks.map(item => (
+              <FooterText key={item.Id}>
+                <Link to={item.link} spy={true} smooth={true} offset={-100} duration={500}>
+                  {item.title}
+                </Link>
               </FooterText>
             ))}
           </FooterLinks>
         </FooterInsights>
         <hr style={{ width: '100%', margin: '80px 0 25px 0' }} />
         <FooterCopyright>
-          <FooterText>Architected with 💙 by OpenCode</FooterText>
+          <FooterText>
+            Architected with 💙 by{' '}
+            <Link href='https://www.instagram.com/opencode.nitr/' style={{ textDecoration: 'underline', fontWeight: '700' }}>
+              OpenCode
+            </Link>
+          </FooterText>
           <FooterSocials>
             {socialLinks.map(socialLink => (
               <Link key={socialLink.Id} href={socialLink.link}>

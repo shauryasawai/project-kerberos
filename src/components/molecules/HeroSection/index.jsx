@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import Heading2 from '../../shared/Typography/Heading2.jsx';
 import HeroData from '../../../data/HeroData.js';
 import { Body3, Button, Heading1, Heading3 } from '../../shared/index.js';
+import React from 'react';
 
 const HeroSectionContainer = styled.div`
   width: 100%;
@@ -21,9 +22,11 @@ const MainContainer = styled.div`
   flex-direction: column;
   gap: 12px;
   align-items: flex-start;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   @media (min-width: 768px) {
     width: 72%;
-    gap: 88px;
+    gap: 20px;
     margin: auto;
     align-items: center;
   }
@@ -40,6 +43,8 @@ const SubContainer = styled.div`
     align-items: center;
     justify-content: center;
   }
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
 `;
 
 const UpperContainer = styled.div`
@@ -48,7 +53,10 @@ const UpperContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   gap: 0;
+  margin-top: 5%;
   align-items: flex-start;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   @media (min-width: 768px) {
     align-items: center;
   }
@@ -61,12 +69,16 @@ const LowerContainer = styled.div`
   justify-content: center;
   gap: 12px;
   align-items: flex-start;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   @media (min-width: 768px) {
     align-items: center;
     gap: 24px;
   }
 `;
 const Head1 = styled(Heading1)`
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
   color: #fff;
   text-align: left;
   font-size: 40px;
@@ -78,6 +90,8 @@ const Head1 = styled(Heading1)`
 `;
 
 const Head2 = styled(Heading2)`
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
   color: #fff;
   text-align: left;
   font-size: 40px;
@@ -89,6 +103,8 @@ const Head2 = styled(Heading2)`
   }
 `;
 const Head3 = styled(Heading3)`
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
   color: #fff;
   text-align: left;
   @media (min-width: 768px) {
@@ -96,10 +112,26 @@ const Head3 = styled(Heading3)`
   }
 `;
 const Body = styled(Body3)`
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   color: #fff;
   text-align: left;
   @media (min-width: 768px) {
     text-align: center;
+  }
+`;
+
+const Circle = styled.span`
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 0 2px;
+  @media (max-width: 768px) {
+    margin: 6px 2px;
+    width: 5px;
+    height: 5px;
   }
 `;
 export default function HeroSection() {
@@ -112,7 +144,7 @@ export default function HeroSection() {
             <span style={{ color: '#52CD00', lineHeight: '60px' }}>{HeroData.heading2}</span>
             {HeroData.heading3}
             <span style={{ color: '#52CD00', lineHeight: '60px' }}>{HeroData.heading4}</span>
-            {HeroData.heading5}
+            <span style={{ lineHeight: '60px' }}>{HeroData.heading5}</span>
           </Head1>
         </UpperContainer>
         <LowerContainer>
@@ -124,9 +156,12 @@ export default function HeroSection() {
             {HeroData.subtitle5}
           </Body>
           <SubContainer>
-            {HeroData.sub.map(item => {
-              return <Head3 key={item.id}>{item.text}</Head3>;
-            })}
+            {HeroData.sub.map((item, index) => (
+              <React.Fragment key={item.id}>
+                <Head3 semibold>{item.text}</Head3>
+                {index !== HeroData.sub.length - 1 && <Circle />}
+              </React.Fragment>
+            ))}
           </SubContainer>
           <Button variant='primary' text={HeroData.buttonText} style={{ fontSize: '24px', padding: '16px 24px' }} />
         </LowerContainer>

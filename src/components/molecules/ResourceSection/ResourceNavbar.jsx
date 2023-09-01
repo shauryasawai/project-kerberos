@@ -8,7 +8,7 @@ const ResourceNavContainer = styled.div`
     margin-bottom: 30px;
   }
   position: sticky;
-  z-index: 200;
+  z-index: 20;
   background: #cdcdcd;
   top: -1px;
   left: 0;
