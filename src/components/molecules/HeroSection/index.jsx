@@ -3,6 +3,7 @@ import Heading2 from '../../shared/Typography/Heading2.jsx';
 import HeroData from '../../../data/HeroData.js';
 import { Body3, Button, Heading1, Heading3 } from '../../shared/index.js';
 import React from 'react';
+import { Link } from 'react-scroll';
 
 const HeroSectionContainer = styled.div`
   width: 100%;
@@ -163,7 +164,9 @@ export default function HeroSection() {
               </React.Fragment>
             ))}
           </SubContainer>
-          <Button variant='primary' text={HeroData.buttonText} style={{ fontSize: '24px', padding: '16px 24px' }} />
+          <Link to='about' spy={true} smooth={true} offset={-100} duration={500}>
+            <Button variant='primary' text={HeroData.buttonText} style={{ fontSize: '24px', padding: '16px 24px' }} />
+          </Link>
         </LowerContainer>
       </MainContainer>
     </HeroSectionContainer>
