@@ -1,7 +1,8 @@
-import { Link } from 'react-scroll';
+import { Link } from 'react-router-dom';
 import { FooterContainer, FooterCopyright, FooterImage, FooterInsights, FooterLinks, FooterSocials, FooterText } from './styles';
 import { Icon } from '@iconify/react';
 import { footerData } from '../../../data/footer';
+import { Body3 } from '../../shared';
 
 const Footer = () => {
   const { imageLink, siteLinks, socialLinks, alt } = footerData;
@@ -23,12 +24,16 @@ const Footer = () => {
         </FooterInsights>
         <hr style={{ width: '100%', margin: '80px 0 25px 0' }} />
         <FooterCopyright>
-          <FooterText>
+          <Body3 style={{ cursor: 'pointer', color: '#6c757d', fontWeight: '500', textAlign: 'left' }}>
             Architected with 💙 by{' '}
-            <Link href='https://www.instagram.com/opencode.nitr/' style={{ textDecoration: 'underline', fontWeight: '700' }}>
+            <Link
+              to='https://www.instagram.com/opencode.nitr/'
+              target='_blank'
+              rel='noopener noreferrer'
+              style={{ textDecoration: 'underline', fontWeight: '700' }}>
               OpenCode
             </Link>
-          </FooterText>
+          </Body3>
           <FooterSocials>
             {socialLinks.map(socialLink => (
               <Link key={socialLink.Id} href={socialLink.link}>
