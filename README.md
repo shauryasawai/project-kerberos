@@ -1,5 +1,6 @@
 # React + Vite
 
+Official website for [Analytics and Consulting Club, NIT Rourkela](https://www.instagram.com/anc.nitr/)
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
