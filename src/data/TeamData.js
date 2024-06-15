@@ -1,74 +1,79 @@
 export const TeamData = [
   {
-    name: 'Saranya Mishra',
+    name: 'Brajesh Mohanty',
     Position: 'President',
-    imagesrc: 'https://res.cloudinary.com/dhnkuonev/image/upload/v1693376346/Screenshot_20230823_162711_Instagram_ebfri5.jpg',
-    achievements: 'Ex- IIM Lucknow Intern',
+    imagesrc:
+      'https://res.cloudinary.com/dqbcbqcbr/image/upload/v1718364971/WhatsApp_Image_2024-06-14_at_16.49.19_6615dea1_z1zr3g.jpg',
+    achievements: '',
     Instagram: '',
-    LinkedIn: 'https://www.linkedin.com/in/saranya-mishra-84b98824a/',
+    LinkedIn:
+      'https://www.linkedin.com/in/brajesh-mohanty-a2157227a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
     Twitter: '',
   },
   {
-    name: 'B.Achyut',
+    name: 'Asish Das',
     Position: 'Vice-President',
-    imagesrc: 'https://res.cloudinary.com/dhnkuonev/image/upload/v1693376345/IMG_20230822_171631_hrj6ja.jpg',
-    achievements: 'Ex-IIM Calcutta Intern',
+    imagesrc:
+      'https://res.cloudinary.com/dqbcbqcbr/image/upload/v1718364972/WhatsApp_Image_2024-06-14_at_16.49.59_da12d360_xkkztk.jpg',
+    achievements: '',
     Instagram: '',
-    LinkedIn: 'https://www.linkedin.com/in/b-achyut-38a049225/',
+    LinkedIn:
+      'https://www.linkedin.com/in/asishdas09?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
     Twitter: '',
   },
   {
-    name: 'Prachuit Priyadarshi Sahoo',
-    Position: 'Outreach Head',
-    imagesrc: 'https://res.cloudinary.com/dhnkuonev/image/upload/v1693376345/IMG_7545_eedah7.jpg',
-    achievements: 'Intern, Emertxe',
-    Instagram: '',
-    LinkedIn: 'https://www.linkedin.com/in/prachuit-priyadarshi-sahoo-884876189/',
-    Twitter: '',
-  },
-  {
-    name: 'Shashank Mani Singh ',
+    name: 'S Harikrishna Panicker',
     Position: 'Strategic Head',
-    imagesrc: 'https://res.cloudinary.com/dhnkuonev/image/upload/v1693384437/sms_vx3ja1.jpg',
-    achievements: 'Ex-IIM Lucknow Intern',
+    imagesrc:
+      'https://res.cloudinary.com/dqbcbqcbr/image/upload/v1718364971/WhatsApp_Image_2024-06-14_at_16.50.24_6b90e0e2_iqsfhu.jpg',
+    achievements: '',
     Instagram: '',
-    LinkedIn: 'https://www.linkedin.com/in/shashank-mani-singh-b2688425b/',
+    LinkedIn:
+      'https://www.linkedin.com/in/s-harikrishna-panicker-544354205?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
     Twitter: '',
   },
   {
-    name: 'Sambeda Nayak',
+    name: 'Laksh Garg',
     Position: 'Secretary',
-    imagesrc: 'https://res.cloudinary.com/dhnkuonev/image/upload/v1693376346/Sambeda_Nayak_bcicfy.jpg',
-    achievements: 'Ex - IIT Guwahati Intern',
+    imagesrc:
+      'https://res.cloudinary.com/dqbcbqcbr/image/upload/v1718364971/WhatsApp_Image_2024-06-14_at_16.50.53_d8a5e5e6_x2ghcq.jpg',
+    achievements: '',
     Instagram: '',
-    LinkedIn: 'https://www.linkedin.com/in/sambeda-nayak-468084203/',
+    LinkedIn:
+      'https://www.linkedin.com/in/laksh-garg-96871b257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
     Twitter: '',
   },
   {
-    name: 'Abhidi Gupta',
+    name: 'Siddhartha Sahu',
+    Position: 'Design Head',
+    imagesrc:
+      'https://res.cloudinary.com/dqbcbqcbr/image/upload/v1718364971/WhatsApp_Image_2024-06-14_at_16.51.14_374ae203_oukjxl.jpg',
+    achievements: '',
+    Instagram: '',
+    LinkedIn:
+      'https://www.linkedin.com/in/siddhartha-sahu-0a3631244?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    Twitter: '',
+  },
+  {
+    name: 'Urvi Das',
+    Position: 'Outreach Head',
+    imagesrc:
+      'https://res.cloudinary.com/dqbcbqcbr/image/upload/v1718364971/WhatsApp_Image_2024-06-14_at_16.51.23_5d9ecda0_ohi4bb.jpg',
+    achievements: '',
+    Instagram: '',
+    LinkedIn:
+      'https://www.linkedin.com/in/urvi-das-059988293?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    Twitter: '',
+  },
+  {
+    name: 'Harsh Pawar',
     Position: 'Content Head',
-    imagesrc: 'https://res.cloudinary.com/dhnkuonev/image/upload/v1693550430/Abhidi_Gupta_fnfpyt.jpg',
-    achievements: 'Ex-IIM Calcutta Intern',
+    imagesrc:
+      'https://res.cloudinary.com/dqbcbqcbr/image/upload/v1718364971/WhatsApp_Image_2024-06-14_at_16.51.06_17369877_e63msh.jpg',
+    achievements: '',
     Instagram: '',
-    LinkedIn: 'https://www.linkedin.com/in/abhidi-gupta-422618236/',
-    Twitter: '',
-  },
-  {
-    name: 'Lui Kirtan Deori Bharali',
-    Position: 'Technical Head',
-    imagesrc: 'https://res.cloudinary.com/dhnkuonev/image/upload/v1693376348/luikdb_bgp0id.jpg',
-    achievements: 'Ex-ML Intern - Feynn Labs',
-    Instagram: '',
-    LinkedIn: 'https://www.linkedin.com/in/luikdb/',
-    Twitter: '',
-  },
-  {
-    name: 'Premjeet Parida',
-    Position: 'Mentor',
-    imagesrc: 'https://res.cloudinary.com/dhnkuonev/image/upload/v1693376354/Premjeet_Parida_bdl3df.jpg',
-    achievements: 'IIMB Strategy Intern, Ex-Intern Blackbuck',
-    Instagram: '',
-    LinkedIn: 'https://www.linkedin.com/in/premjeet-parida-/',
+    LinkedIn:
+      'https://www.linkedin.com/in/harsh-pawar-b84741276?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
     Twitter: '',
   },
 ];

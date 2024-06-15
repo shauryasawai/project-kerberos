@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "prettier": "prettier --write .",
     "format": "prettier --write --config .prettierrc --ignore-path .prettierignore .",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0 --fix",
     "format:check": "prettier --check --config .prettierrc --ignore-path .prettierignore .",
@@ -40,7 +41,7 @@
     "eslint-plugin-react-refresh": "^0.4.3",
     "husky": "^8.0.3",
     "lint-staged": "^14.0.0",
-    "prettier": "^3.0.2",
+    "prettier": "^3.3.2",
     "vite": "^4.4.5"
   }
 }
