@@ -11,7 +11,7 @@ export const contactData = {
     phone: {
       icon: 'ic:sharp-phone',
       text: 'Phone',
-      link: ['tel:+91-7978414351 (Saranya Mishra),', 'tel:+91-8340153562 (B Achyut)'],
+      link: ['tel:+91-9009977043 (Varshit),', 'tel:+91-7735510636 (Manjeet)'],
       description: 'Reach to our representatives anytime!',
     },
     address: {

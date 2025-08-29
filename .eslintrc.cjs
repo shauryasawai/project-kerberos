@@ -15,5 +15,10 @@ module.exports = {
   rules: {
     'react-refresh/only-export-components': ['off', { allowConstantExport: true }],
     'react/prop-types': ['off'],
+    'react/react-in-jsx-scope': 'off', // Not needed with new JSX transform
+    'no-unused-vars': ['error', { 
+      varsIgnorePattern: '^React$|^_', 
+      argsIgnorePattern: '^_'
+    }], // Ignore React and variables starting with underscore
   },
 };

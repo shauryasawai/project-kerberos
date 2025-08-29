@@ -1,8 +1,9 @@
 export default {
   0: {
-    imgUrl: 'https://res.cloudinary.com/dhnkuonev/image/upload/v1693371764/Shubhra_Pujari_urvckm.jpg',
-    title: 'Shubhra Pujari',
-    description: 'Accenture S&C, MDI',
+    imgUrl:
+      'https://media.licdn.com/dms/image/v2/D4D03AQGyiGdYLv7cxQ/profile-displayphoto-shrink_400_400/B4DZTVEwOlHAAo-/0/1738741586873?e=1759363200&v=beta&t=adEAQdDMZom9JEbZK7ZDTW1SfmioPRVgil-i6gmci8E',
+    title: 'Brajesh Mohanty',
+    description: ' Ex President AnC Club',
   },
 
   1: {
@@ -44,5 +45,10 @@ export default {
     imgUrl: 'https://res.cloudinary.com/dhnkuonev/image/upload/v1693381921/060_Sanjeeban_square_bf0qbm.jpg',
     title: 'Sanjeeban Nanda',
     description: ' IBM Strategy, SPJIMR',
+  },
+  8: {
+    imgUrl: 'https://res.cloudinary.com/dhnkuonev/image/upload/v1693371764/Shubhra_Pujari_urvckm.jpg',
+    title: 'Shubhra Pujari',
+    description: 'Accenture S&C, MDI',
   },
 };
