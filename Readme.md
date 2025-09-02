@@ -1,35 +1,9 @@
-# Project Kerbero
+# React + Vite
 
-Analytics and Consulting club website of NIT Rourkela
+Official website for [Analytics and Consulting Club, NIT Rourkela](https://www.instagram.com/anc.nitr/)
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-# About The Project
+Currently, two official plugins are available:
 
-Following technologies and libraries are used for the development of this project.
-
-- [React](https://reactjs.org/)
-
-- [Styled Component](https://styled-components.com/docs)
-
-- [Vite](https://vitejs.dev/guide/why.html)
-
-## Local Repository Setup
-
-Please refer to the project's style for submitting patches and additions. In general, we follow the "fork-and-pull" Git workflow.
-
-1. **Fork** the repo on GitHub
-
-2. **Clone** the project to your local system
-
-3. **Commit** changes to your own separate branch
-
-4. **Push** your work back up to your fork
-
-5. Submit a **Pull request** so that we can review your changes
-
-## Running the project.
-
-    ##install dependencies
-    npm install
-
-    ##Run the project.
-    npm run dev
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
